@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Inicio de sesión</title>
+</head>
+<body>
+  <h1>Iniciar sesión</h1>
+  <form action="procesar_inicio_sesión.php" method="post">
+    <fieldset>
+     
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+      <br><br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+    </fieldset>
+    <br>
+    <input type="submit" value="Iniciar sesión">
+    <input type="reset" value="Borrar">
+  </form>
+
+  <br>
+  <h1>Formulario de contacto </h1>
+  <form>
+    <fieldset>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+    <br><br>
+
+    <label for="asunto">Asunto:</label>
+<input type="text" id="asunto" name="asunto" placeholder="escribe asunto" required>
+    <br><br>
+
+    <p><strong>Déjanos tu mensaje:</strong></p>
+    <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe aquí tu mensaje..."></textarea><br>
+
+    <input type="reset" value="Borrar">
+    <input type="submit" value="Enviar">
+</fieldset> 
+
+</fieldset>
+  </form>
+
+</form>
+
+<br>
+ <h1>Encuesta de satisfacción</h1>
+<form action="encuesta" method="post">
+<fieldset>
+    <p><strong>Aspectos del servicio que te ha gustado</strong></p>
+    <input type="radio" name="mejora" value="Tiempo de espera"> Tiempo de espera o entrega<br>
+    <input type="radio" name="mejora" value="Atención"> Atención al cliente<br>
+
+    <p><strong>Aspectos para mejorar</strong></p>
+    <input type="checkbox" name="mejora" value="Tiempo de espera"> Tiempo de espera o entrega<br>
+    <input type="checkbox" name="mejora" value="Atención"> Atención al cliente<br>
+    <input type="checkbox" name="mejora" value="Otro"> Otro: <input type="text" name="otro_mejora"><br>
+
+    <p><strong>Déjanos tu opinión o sugerencias adicionales:</strong></p>
+    <textarea name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tu comentario..."></textarea><br>
+
+    <input type="submit" value="Enviar">
+
+</fieldset>
+</form>
+</body>
+</html>

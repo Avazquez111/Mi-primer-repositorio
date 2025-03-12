@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormParty</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+<form>
+    <fieldset>
+        <legend>Conexión</legend>
+        <p><strong>Selecciona el tipo de conexión:</strong></p>
+        <input type="radio" name="conexion" value="conexionwifi"> WiFi<br>
+        <input type="radio" name="conexion" value="conexioncable"> Cable<br>
+        <input type="radio" name="conexion" value="conexionfibra"> Fibra<br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Hora y Fecha</legend>
+        <p><strong>Selecciona la hora:</strong></p>
+        <input type="time" name="hora"><br>
+
+        <p><strong>Selecciona la fecha:</strong></p>
+        <input type="date" name="fecha"><br>
+    </fieldset>
+        <fieldset>
+            <legend>Archivos</legend>
+            <p><strong>Elija un fichero:</strong></p>
+            <input type="file" name="archivo"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <p><strong>Selecciona tu preferencia:</strong></p>
+            <select name="preferencia">
+                <option value="ciencias">Ciencias</option>
+                <option value="letras">Letras</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+            <p><strong>Escribe un comentario:</strong></p>
+            <textarea name="comentario" rows="8" cols="45">Escriba aquí, por favor</textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Conectores</legend>
+            <p><strong>Selecciona los conectores que usas:</strong></p>
+            <input type="checkbox" name="conector" value="conectorusb"> USB<br>
+            <input type="checkbox" name="conector" value="conectorparalelo"> Paralelo<br>
+            <input type="checkbox" name="conector" value="conectorps2"> PS2<br>  
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales</legend>
+            Instituto: <input type="text" name="instituto"><br>
+            Estudios elegidos: <input type="text" name="estudios"><br>
+            Nombre: <input type="text" name="nombre"><br>
+            Apellidos: <input type="text" name="apellidos"><br>
+            Email: <input type="email" name="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Color</legend>
+            <p><strong>Selecciona un color:</strong></p>
+            <input type="color" name="color"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Procesador</legend>
+            <p><strong>Selecciona el tipo de procesador:</strong></p>
+            <input type="radio" name="procesador" value="procesadorintel"> Intel<br>
+            <input type="radio" name="procesador" value="procesadoramd"> AMD<br>
+        </fieldset>
+        <fieldset>
+            <legend>Idiomas</legend>
+            <p><strong>Selecciona los idiomas que hablas:</strong></p>
+            <select name="idioma" multiple>
+                <option value="ingles">Inglés</option>
+                <option value="aleman">Alemán</option>
+                <option value="frances">Francés</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            Nombre: <input type="text" name="nombre2"><br>
+            Apellidos: <input type="text" name="apellidos2"><br>
+            Email: <input type="email" name="email2"><br>
+            Teléfono: <input type="text" name="telefono"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Provincia</legend>
+            <p><strong>Selecciona tu provincia:</strong></p>
+            <input type="checkbox" name="provincia" value="albacete"> Albacete<br>
+            <input type="checkbox" name="provincia" value="ciudad_real"> Ciudad Real<br>
+            <input type="checkbox" name="provincia" value="cuenca"> Cuenca<br>
+            <input type="checkbox" name="provincia" value="guadalajara"> Guadalajara<br>
+            <input type="checkbox" name="provincia" value="toledo"> Toledo<br>
+        </fieldset>
+        <fieldset>
+            <legend>Comentario final</legend>
+            <textarea name="escribir" rows="8" cols="49">Utilice este cuadro para escribir</textarea><br>
+        </fieldset>
+    </fieldset>  
+</form> 
+</body>
+</html>
