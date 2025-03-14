@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 de Caja y Espaciado</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .box {
+            width: 80%;
+            padding: 20px;
+            margin: 15px auto;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Primera caja*/
+        .box1 {
+            background-color: lightblue;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Segunda caja*/
+        .box2 {
+            background-color: lightcoral;
+            margin: 10px 30px; 
+            padding: 15px 40px; 
+        }
+
+        /* Tercera caja*/
+        .box3 {
+            background-color: lightgreen;
+            margin: 30px 20px 10px 40px; 
+            padding: 10px 50px 30px 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Caja 1: margin 20px, padding 20px</div>
+        <div class="box box2">Caja 2: margin 10px 30px, padding 15px 40px</div>
+        <div class="box box3">Caja 3: margin 30px 20px 10px 40px, padding 10px 50px 30px 20px</div>
+    </div>
+</body>
+</html>
