@@ -1,0 +1,142 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .square {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s, transform 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  .square:hover {
+    background-color: #e74c3c;
+    transform: scale(1.2) rotate(45deg);
+  }
+  
+  .hover-text {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    transition: transform 1s ease-in-out, color 1s ease-in-out 1s;
+  }
+
+  .square:hover .hover-text {
+    transform: translateX(50px);
+    color: yellow;
+  }
+  .moving-square {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    transition: transform 3s ease-in-out;
+  }
+  
+  .square:hover + .moving-square {
+    transform: translateX(300px) rotate(360deg);
+  }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .animated-button {
+    background-color: #ff5733;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .animated-button:hover {
+    transform: scale(1.1) rotate(5deg);
+    background-color: #c70039;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .animated-button:active {
+    transform: scale(0.9) rotate(-5deg);
+    background-color: #900c3f;
+  }
+  
+  .card {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s;
+    position: relative;
+    color: black; 
+    margin: 40px auto;
+    overflow: hidden; 
+    background-color: white; 
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 60%;
+    object-fit: cover; 
+    border-radius: 12px 12px 0 0; 
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
+    border: 2px solid #ff5733;
+  }
+  
+  .card-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .card-subtitle {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .card-button {
+    background-color: #ff5733;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .card-button:hover {
+    background-color: #c70039;
+    transform: scale(1.1);
+  }
+ 
