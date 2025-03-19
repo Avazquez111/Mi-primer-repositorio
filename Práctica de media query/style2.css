@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+section {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.header { background-color: dodgerblue; }
+.hero { background-color: crimson; }
+.content { background-color: green; }
+.sidebar { background-color: purple; }
+.footer { background-color: gray; }
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 900px;
+    }
+
+    .content {
+        display: inline-block;
+        width: 65%;
+        vertical-align: top;
+    }
+
+    .sidebar {
+        display: inline-block;
+        width: 33%;
+        vertical-align: top;
+    }
+}
+ 
+@media screen and (min-width: 1024px) {
+    .content-sidebar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch; 
+        width: 100%;
+    }
+
+    .content {
+        width: 65%; 
+        background-color: green;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 30%; 
+        background-color: purple;
+        padding: 20px;
+    }
+}
+
+
